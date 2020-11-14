@@ -8,12 +8,12 @@
 }
 
 .bg {
-    background: url('https://images.unsplash.com/photo-1519387310011-ce0c0fbc6ab2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1488&q=80') no-repeat;
+    background-image: url(/images/bg1.jpg);
     width: 100%;
     margin: 3 auto 0 auto;
     position: absolute;
-    background: url(/images/bg1.jpg) no-repeat;
     background-size: cover;
+    background-color: #000;
 }
 
 p {
@@ -55,7 +55,7 @@ header {
     margin: 10px auto;
     width: 70%;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px 5px green;
+    box-shadow: 0px 0px 10px 3px green;
     opacity: .9;
 }
 
@@ -163,7 +163,7 @@ header {
 
     }
     #title {
-        font-size: 2rem;
+        font-size: 4rem;
     }
 
 
@@ -183,21 +183,33 @@ header {
 
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 400px) {
+    
     #title {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     #description {
         font-size: .9rem;
     }
-
+    .form-container {
+        position: relative;
+        background-color: #f4f4f4;
+        opacity: 0.98;
+        padding: 50px;
+        margin: 10px auto;
+        width: 99%;
+        border-radius: 0px;
+    }
     .form-group label {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
 
     .form-group input {
         border: 1px rgb(4, 83, 4) solid;
+        padding: 5px;
+        margin: 0;
+        font-size: 1rem;
     }
 
     .form-control {
