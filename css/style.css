@@ -194,6 +194,7 @@ header {
 
     #description {
         font-size: .9rem;
+        margin-top: 20px;
     }
     .form-container {
         position: relative;
