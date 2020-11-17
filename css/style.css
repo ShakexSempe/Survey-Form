@@ -101,6 +101,7 @@ header {
 
 /*end of form-control*/
 /*checkbox*/
+
 .checkbox input{
     margin-right: 20px;
 }
@@ -141,7 +142,9 @@ header {
     background: #008000;
     box-shadow: none;
 }
-
+#submit a{
+    color: #fff;
+}
 /*end of sumbit*/
 
 
@@ -186,7 +189,7 @@ header {
 @media screen and (max-width: 400px) {
     
     #title {
-        font-size: 1.8rem;
+        font-size: 1.9rem;
     }
 
     #description {
@@ -200,6 +203,8 @@ header {
         margin: 10px auto;
         width: 99%;
         border-radius: 0px;
+        box-shadow: 0px 0px 20px 10px green;
+
     }
     .form-group label {
         font-size: 1.5rem;
@@ -233,10 +238,17 @@ header {
     .radio label {
         padding: 10px;
     }
+    .radio input{
+        margin-right: 10px;
+    }
 
     .checkbox label {
         padding: 10px;
     }
+    .checkbox input{
+        margin-right: 10px;
+    }
+    
 
     .form-group p {
         text-align: center;

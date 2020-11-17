@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <title>Survey Form</title>
   </head>
@@ -13,9 +13,7 @@
       <!--Header-->
       <header class="header">
         <h1 id="title">FreeCodeCamp Survey Form</h1>
-        <p id="description">
-          Responsive Web Design Projects<br />Survey Form
-        </p>
+        <p id="description">Responsive Web Design Project<br />Survey Form</p>
       </header>
       <!--end of Header-->
 
@@ -39,7 +37,7 @@
             type="email"
             class="form-control"
             id="email"
-            placeholder="Email"
+            placeholder="Enter email address"
             aria-describedby="emailHelp"
             required
           />
@@ -53,46 +51,73 @@
             type="number"
             class="form-control"
             id="number"
+            min="16"
             max="99"
-            min="13"
             placeholder="Age"
+            required
           />
         </div>
         <!--end of name-email-age-->
 
         <!--Checkbox options-->
         <div class="form-group">
-          <p>Pick from checkbox options:</p>
+          <p>Which Operating Systems do you use regularly</p>
           <div class="checkbox">
-            <label><input type="checkbox" value="1" />Check 1</label>
+            <label><input type="checkbox" value="1" />Android</label>
           </div>
           <div class="checkbox">
-            <label><input type="checkbox" value="2" />Check 2</label>
+            <label><input type="checkbox" value="2" />iOS</label>
           </div>
           <div class="checkbox">
-            <label><input type="checkbox" value="3" />Check 3</label>
+            <label><input type="checkbox" value="3" />Windows</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" value="4" />Linux</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" value="5" />Ubuntu</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" value="6" />Other</label>
           </div>
         </div>
         <!--end of Checkbox options-->
 
         <!--Radio buttons-->
         <div class="form-group radio">
-          <p>Pick from radio options:</p>
+          <p>Which device are you viewing this page on:</p>
           <label for="Option 1" class="radio-inline">
-            <input type="radio" value="option 1" name="optradio"checked />Radio 1</label>
+            <input
+              type="radio"
+              value="option 1"
+              name="optradio"
+              checked
+            />Desktop</label
+          >
 
           <label for="Option 2" class="radio-inline">
-            <input type="radio" value="option 2" name="optradio" />Radio 2</label>
+            <input
+              type="radio"
+              value="option 2"
+              name="optradio"
+            />Smartphone</label
+          >
 
           <label for="Option 3" class="radio-inline">
-            <input type="radio" value="option 3" name="optradio" />Radio 3</label>
+            <input type="radio" value="option 3" name="optradio" />Tablet</label
+          >
         </div>
         <!--end of Radio buttons-->
 
         <!--dropdown-->
         <div class="form-group">
           <label for="dropdown">Prefered JS Framework</label>
-          <select class="form-control" id="dropdown" required  title="frameworks">
+          <select
+            class="form-control"
+            id="dropdown"
+            required
+            title="frameworks"
+          >
             <option title="JS" disabled>Javascript</option>
             <option>Angular</option>
             <option>React</option>
@@ -104,19 +129,26 @@
 
         <!--Comment and submit-->
         <div class="form-group">
-          <label for="comment">Comment</label>
+          <label for="comment">Add any suggestions to imporve this page</label>
           <textarea
-            class="form-control" id="comment" name="comment" cols="" rows="2"
-            placeholder="Enter your comment here..." >
+            class="form-control"
+            id="comment"
+            name="comment"
+            cols="50"
+            rows="3"
+            placeholder="Enter your comment here..."
+          >
           </textarea>
         </div>
 
-        <button type="submit" id="submit">Submit</button>
+        <button type="submit" id="submit">
+          <a href="https://github.com/ShakexSempe" target="_blank">Submit</a>
+        </button>
       </form>
     </section>
     <!--end of Comment and submit-->
 
     <!--end of Form-->
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    </body>
+  </body>
 </html>
