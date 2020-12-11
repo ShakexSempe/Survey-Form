@@ -158,7 +158,6 @@ header {
     .form-group label {
         display: flex;
         justify-content: flex-start;
-        color: green;
         font-size: 1.8rem;
         margin-bottom: .5rem;
         font-weight: 600;
@@ -166,8 +165,8 @@ header {
     .form-group input{
         font-size: 1.5rem;
         font-weight: 530;
-
     }
+    
     #title {
         font-size: 4rem;
     }
@@ -238,9 +237,10 @@ header {
     .form-group {
         padding-bottom: 30px;
     }
-
+    
     .radio label {
         padding: 10px;
+        font-size: 1.1rem;
     }
     .radio input{
         margin-right: 10px;
@@ -248,6 +248,7 @@ header {
 
     .checkbox label {
         padding: 10px;
+        font-size: 1.1rem;
     }
     .checkbox input{
         margin-right: 10px;
@@ -257,7 +258,7 @@ header {
     .form-group p {
         text-align: center;
         text-decoration: underline;
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 
 }
