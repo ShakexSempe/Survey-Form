@@ -83,7 +83,6 @@ header {
     border: 2px rgb(4, 83, 4) solid;
     padding: 10px;
     margin-bottom: 40px ;
-    color: green;
     /*end of Form-Group*/
 
 }
@@ -128,24 +127,26 @@ header {
     display: block;
     width: 100%;
     margin-top: 30px;
-    padding: 0.75rem;
+    padding: 0.3rem;
     border-radius: 20px;
     cursor: pointer;
     font-weight: 700;
-    background-color: rgb(7, 209, 7);
+    background: #008000;
     font-size: 1.3rem;
-    transition: .4s ease;
+    transition: .2s ease-in-out;
     box-shadow: 0px 0px 3px 2px green;
 
 }
 
 #submit:hover {
-    transition: 0.4s ease;
+    transition: 0.2s ease;
     color: #fff;
-    background: #008000;
+    background-color: rgb(7, 209, 7);
+    
     box-shadow: none;
 }
 #submit a{
+    text-decoration: none;
     color: #fff;
 }
 /*end of sumbit*/
