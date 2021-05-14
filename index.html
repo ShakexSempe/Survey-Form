@@ -46,7 +46,7 @@
           >
         </div>
         <div class="form-group">
-          <label for="number" id="number-label">Age</label>
+          <label for="number" id="number-label">Age
           <input
             type="number"
             class="form-control"
@@ -56,6 +56,7 @@
             placeholder="Age"
             required
           />
+        </label>
         </div>
         <!--end of name-email-age-->
 
@@ -146,15 +147,18 @@
         </button>
       </form>
       <footer>
-        <ul>
-          <li>2021</li>
-          <li>ShakexSempe</li>
-        </ul>
+        <p>
+          Shakex Sempe: <span id="date"></span>
+        </p>
       </footer>
     </section>
     <!--end of Comment and submit-->
 
     <!--end of Form-->
+    <script>
+      const date = document.getElementById('date');
+      date.innerHTML = new Date().getFullYear();
+    </script>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>

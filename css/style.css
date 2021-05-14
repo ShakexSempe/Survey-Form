@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,7 +8,7 @@
 }
 
 .bg {
-    background: linear-gradient(90deg, #000, rgb(1, 58, 1), #000) ;
+    background: linear-gradient(90deg, #000, rgb(1, 58, 1), #000);
     width: 100%;
     margin: 3 auto 0 auto;
     position: absolute;
@@ -81,7 +82,7 @@ header {
 .form-group input {
     border: 2px rgb(4, 83, 4) solid;
     padding: 10px;
-    margin-bottom: 40px ;
+    margin-bottom: 40px;
     /*end of Form-Group*/
 
 }
@@ -101,22 +102,26 @@ header {
 /*end of form-control*/
 /*checkbox*/
 
-.checkbox input{
+.checkbox input {
     margin-right: 20px;
 }
-.checkbox label{
+
+.checkbox label {
     color: #000;
     font-size: 1.7rem;
 }
+
 /*end of checkbox*/
 /*radio*/
-.radio input{
+.radio input {
     margin-right: 20px;
 }
-.radio label{
+
+.radio label {
     color: #000;
     font-size: 1.7rem;
 }
+
 /*end of radio*/
 
 /*end of form*/
@@ -140,144 +145,140 @@ header {
 #submit:hover {
     transition: 0.2s ease;
     color: #fff;
-    
+
     box-shadow: none;
 }
-#submit a{
+
+#submit a {
     text-decoration: none;
     color: #fff;
 }
+
 /*end of sumbit*/
 
 /*footer*/
-footer{
+footer {
     color: #fff;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    padding: 10px 0;
 }
-footer ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-footer li{
-    list-style: none;
-    margin: 5px;
-    font-size: 1.2rem;
-}
-/*end of footer*/
+    /*end of footer*/
 
 
-/*media query*/
-@media only screen and (max-width: 768px) {
+    /*media query*/
+    @media only screen and (max-width: 768px) {
 
-    .form-group label {
-        display: flex;
-        justify-content: flex-start;
-        font-size: 1.8rem;
-        margin-bottom: .5rem;
-        font-weight: 600;
-    }
-    .form-group input{
-        font-size: 1.5rem;
-        font-weight: 530;
-    }
-    
-    #title {
-        font-size: 4rem;
-    }
+        .form-group label {
+            display: flex;
+            justify-content: flex-start;
+            font-size: 1.8rem;
+            margin-bottom: .5rem;
+            font-weight: 600;
+        }
+
+        .form-group input {
+            font-size: 1.5rem;
+            font-weight: 530;
+        }
+
+        #title {
+            font-size: 4rem;
+        }
 
 
-    .radio label {
-        font-weight: 200;
-    }
+        .radio label {
+            font-weight: 200;
+        }
 
-    .checkbox label {
-        font-weight: 200;
+        .checkbox label {
+            font-weight: 200;
+
+        }
+
+        .form-group p {
+            text-align: center;
+            text-decoration: underline;
+        }
 
     }
 
-    .form-group p {
-        text-align: center;
-        text-decoration: underline;
+    @media screen and (max-width: 400px) {
+
+        #title {
+            font-size: 1.9rem;
+        }
+
+        #description {
+            font-size: .9rem;
+            margin-top: 20px;
+        }
+
+        .form-container {
+            position: relative;
+            background-color: #f4f4f4;
+            opacity: 0.98;
+            padding: 50px;
+            margin: 10px auto;
+            width: 100%;
+            border-radius: 0px;
+            box-shadow: 0px 0px 20px 10px green;
+
+        }
+
+        .form-group label {
+            font-size: 1.5rem;
+        }
+
+        .form-group input {
+            border: 1px rgb(4, 83, 4) solid;
+            padding: 5px;
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        .form-control {
+            padding: 5px;
+            width: 100%;
+            font-size: .9rem;
+            font-weight: 600;
+        }
+
+        .form-control:hover {
+            transition: none;
+            box-shadow: none;
+            font-size: none;
+            font-weight: none;
+        }
+
+        .form-group {
+            padding-bottom: 30px;
+        }
+
+        .radio label {
+            padding: 10px;
+            font-size: 1.1rem;
+        }
+
+        .radio input {
+            margin-right: 10px;
+        }
+
+        .checkbox label {
+            padding: 10px;
+            font-size: 1.1rem;
+        }
+
+        .checkbox input {
+            margin-right: 10px;
+        }
+
+
+        .form-group p {
+            text-align: center;
+            text-decoration: underline;
+            font-size: 1.3rem;
+        }
+
     }
 
-}
-
-@media screen and (max-width: 400px) {
-    
-    #title {
-        font-size: 1.9rem;
-    }
-
-    #description {
-        font-size: .9rem;
-        margin-top: 20px;
-    }
-    .form-container {
-        position: relative;
-        background-color: #f4f4f4;
-        opacity: 0.98;
-        padding: 50px;
-        margin: 10px auto;
-        width: 100%;
-        border-radius: 0px;
-        box-shadow: 0px 0px 20px 10px green;
-
-    }
-    .form-group label {
-        font-size: 1.5rem;
-    }
-
-    .form-group input {
-        border: 1px rgb(4, 83, 4) solid;
-        padding: 5px;
-        margin: 0;
-        font-size: 1rem;
-    }
-
-    .form-control {
-        padding: 5px;
-        width: 100%;
-        font-size: .9rem;
-        font-weight: 600;
-    }
-
-    .form-control:hover {
-        transition: none;
-        box-shadow: none;
-        font-size: none;
-        font-weight: none;
-    }
-
-    .form-group {
-        padding-bottom: 30px;
-    }
-    
-    .radio label {
-        padding: 10px;
-        font-size: 1.1rem;
-    }
-    .radio input{
-        margin-right: 10px;
-    }
-
-    .checkbox label {
-        padding: 10px;
-        font-size: 1.1rem;
-    }
-    .checkbox input{
-        margin-right: 10px;
-    }
-    
-
-    .form-group p {
-        text-align: center;
-        text-decoration: underline;
-        font-size: 1.3rem;
-    }
-
-}
-
-/*end of media query*/
+    /*end of media query*/
