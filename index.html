@@ -26,21 +26,25 @@
           <label for="name" id="name-label">Name*</label>
           <input type="text" class="form-control" id="name" placeholder="name & last-name" required/>
 
-          <label for="email" id="email-label">Email Address</label>
-          <input type="email" class="form-control" id="email" placeholder="Enter email address"
-            aria-describedby="emailHelp" required />
-          <small id="emailHelp" class="form-text text-muted">
-            We'll never share your email with anyone else.</small>
-
-
           <label for="number" id="number-label">Age</label>
-            <input type="number" class="form-control" id="number" min="16" max="99" placeholder="Age" required />
+            <input type="number" class="form-control" id="number" min="16" max="99" placeholder="Age"/>
  
 
+           </fieldset>
+
+        <fieldset class="form-group">
+          <legend>contact info</legend>
+          <label for="email" id="email-label">Email Address*</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email address"
+            aria-describedby="emailHelp" required />
+            <small id="emailHelp" class="form-text text-muted">
+              We'll never share your email with anyone else.</small>
           <label for="tel" id="tel">phone</label>
           <input type="tel" placeholder="phone number" class="form-control" min="9">
+          
         </fieldset>
       <!--end of name-email-age-->
+      
 
         <!--Checkbox options-->
         <fieldset class="form-group">
@@ -96,7 +100,8 @@
 
         <!--Comment and submit-->
         <fieldset class="form-group">
-          <label for="comment">Add any suggestions to imporve this page</label>
+          <legend>message</legend>
+          <label for="comment"></label>
           <textarea
             class="form-control"
             id="comment"

@@ -17,7 +17,6 @@
     text-align: center;
     margin: .5em auto;
     padding: 1em;
-    border: 1px solid red;
     background-color: #000;
     margin: 0 auto; }
     .bg header #title {
@@ -45,23 +44,60 @@
     .bg .form-container fieldset {
       margin: 2em auto;
       overflow: hidden;
-      padding: .5em;
+      padding: .5em 1em;
       text-align: left;
-      border: 1px solid #000;
+      border: none;
       border-radius: 5px;
-      height: auto; }
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      position: relative; }
+      .bg .form-container fieldset::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        box-shadow: inset 2px 2px 5px #ddda, inset -2px -2px 5px #000a; }
       .bg .form-container fieldset legend {
-        margin: .5em; }
+        margin: .5em;
+        text-transform: capitalize;
+        color: #ddd;
+        font-size: 1.2em;
+        padding: .4em .7em;
+        border-radius: 20px;
+        background-color: #146405;
+        box-shadow: inset 2px 2px 5px #fffa, inset -2px -2px 5px #000a; }
       .bg .form-container fieldset label {
-        color: #146405;
+        color: #000;
         font-size: 1.3em;
-        font-weight: 800; }
+        font-weight: 800;
+        text-transform: capitalize;
+        margin-top: .5em;
+        padding: 0 0 .2em .2em; }
       .bg .form-container fieldset input, .bg .form-container fieldset select, .bg .form-container fieldset textarea {
         margin-bottom: 1em;
         border-radius: 5px;
         padding: .5em; }
+        .bg .form-container fieldset input::placeholder, .bg .form-container fieldset select::placeholder, .bg .form-container fieldset textarea::placeholder {
+          font-size: .8em; }
         .bg .form-container fieldset input:invalid, .bg .form-container fieldset select:invalid, .bg .form-container fieldset textarea:invalid {
-          background-color: rgba(255, 166, 0, 0.185); }
+          background-color: rgba(60, 255, 0, 0.185); }
+      .bg .form-container fieldset textarea {
+        width: 100%; }
+    .bg .form-container #submit {
+      display: block;
+      margin: 1em auto;
+      padding: .3em 2em;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: 700;
+      background: linear-gradient(90deg, #000, #013a01, #000);
+      font-size: 1.3rem;
+      transition: .2s ease-in-out;
+      box-shadow: 0px 0px 3px 2px green; }
   @media (max-width: 768px) {
     .bg .form-container {
       width: 90%; } }
