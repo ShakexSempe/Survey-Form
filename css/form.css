@@ -67,7 +67,7 @@
         color: #ddd;
         font-size: 1.2em;
         padding: .4em .7em;
-        border-radius: 20px;
+        border-radius: 5px;
         background-color: #146405;
         box-shadow: inset 2px 2px 5px #fffa, inset -2px -2px 5px #000a; }
       .bg .form-container fieldset label {
@@ -87,17 +87,45 @@
           background-color: rgba(60, 255, 0, 0.185); }
       .bg .form-container fieldset textarea {
         width: 100%; }
+    .bg .form-container .options p {
+      font-size: 1.5em;
+      text-align: left; }
     .bg .form-container #submit {
       display: block;
       margin: 1em auto;
       padding: .3em 2em;
-      border-radius: 20px;
       cursor: pointer;
-      font-weight: 700;
-      background: linear-gradient(90deg, #000, #013a01, #000);
-      font-size: 1.3rem;
+      border: none;
+      outline: none;
+      font-weight: 600;
+      font-size: 1.2rem;
       transition: .2s ease-in-out;
-      box-shadow: 0px 0px 3px 2px green; }
+      position: relative;
+      z-index: 1; }
+      .bg .form-container #submit::before, .bg .form-container #submit::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+        background-color: darkgreen;
+        transition: .3s ease; }
+      .bg .form-container #submit::before {
+        z-index: -1;
+        box-shadow: inset 3px 3px 5px #ddda, inset -3px -3px 5px #000a; }
+      .bg .form-container #submit::after {
+        z-index: -1;
+        opacity: 0;
+        box-shadow: inset 3px 3px 5px #000a, inset -3px -3px 5px #ddda; }
+      .bg .form-container #submit:hover::before {
+        opacity: 0; }
+      .bg .form-container #submit:hover::after {
+        opacity: 1; }
+      .bg .form-container #submit:active {
+        transition: .2s;
+        transform: scale(0.9); }
   @media (max-width: 768px) {
     .bg .form-container {
       width: 90%; } }
