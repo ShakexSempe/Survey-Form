@@ -132,6 +132,8 @@
         .checkbox {
             p {
                 font-size: 1.4em;
+                margin-bottom: .5em;
+                text-decoration: underline;
                 @media (max-width:768px){
                     font-size: 1.2em;
                 }

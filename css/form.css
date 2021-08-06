@@ -97,6 +97,8 @@
         width: 100%; }
     .bg .form-container .checkbox p {
       font-size: 1.4em;
+      margin-bottom: .5em;
+      text-decoration: underline;
       text-align: left; }
       @media (max-width: 768px) {
         .bg .form-container .checkbox p {
