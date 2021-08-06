@@ -57,6 +57,10 @@
         @media (max-width:768px) {
                 width: 90%;
         }
+        small {
+            font-style: italic;
+            margin-bottom: 1em;
+        }
 
         fieldset {
             margin: 2em auto;
@@ -138,6 +142,7 @@
             }
         }
         .radio {
+            margin-top: 1.5em;
             text-transform: capitalize;
         }
 

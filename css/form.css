@@ -44,6 +44,9 @@
     @media (max-width: 768px) {
       .bg .form-container {
         width: 90%; } }
+    .bg .form-container small {
+      font-style: italic;
+      margin-bottom: 1em; }
     .bg .form-container fieldset {
       margin: 2em auto;
       overflow: hidden;
@@ -101,6 +104,7 @@
     .bg .form-container .checkbox label {
       color: #000; }
     .bg .form-container .radio {
+      margin-top: 1.5em;
       text-transform: capitalize; }
     .bg .form-container #submit {
       display: block;
