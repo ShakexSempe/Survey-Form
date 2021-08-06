@@ -108,6 +108,10 @@
     .bg .form-container .radio {
       margin-top: 1.5em;
       text-transform: capitalize; }
+    .bg .form-container .dropdown label {
+      color: #146405; }
+    .bg .form-container .dropdown select {
+      font-size: 1.3em; }
     .bg .form-container #submit {
       display: block;
       margin: 1em auto;

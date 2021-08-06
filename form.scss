@@ -147,6 +147,14 @@
             margin-top: 1.5em;
             text-transform: capitalize;
         }
+        .dropdown {
+            label {
+                color: rgb(20, 100, 5);           
+            }
+            select {
+                font-size: 1.3em;
+            }
+        }
 
         #submit {
             display: block;
