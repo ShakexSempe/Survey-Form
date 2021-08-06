@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/form.css" />
     <title>Survey Form</title>
   </head>
 
@@ -20,48 +21,30 @@
       <!--Form-->
       <!--name-email-age-->
       <form class="form-container" id="survey-form">
-        <div class="form-group">
-          <label for="name" id="name-label">Name</label>
-          <input
-            type="text"
-            class="form-control"
-            id="name"
-            placeholder="Enter your name"
-            required
-          />
-        </div>
+        <fieldset class="form-group">
+          <legend>basic info</legend>
+          <label for="name" id="name-label">Name*</label>
+          <input type="text" class="form-control" id="name" placeholder="name & last-name" required/>
 
-        <div class="form-group">
           <label for="email" id="email-label">Email Address</label>
-          <input
-            type="email"
-            class="form-control"
-            id="email"
-            placeholder="Enter email address"
-            aria-describedby="emailHelp"
-            required
-          />
+          <input type="email" class="form-control" id="email" placeholder="Enter email address"
+            aria-describedby="emailHelp" required />
           <small id="emailHelp" class="form-text text-muted">
-            We'll never share your email with anyone else.</small
-          >
-        </div>
-        <div class="form-group">
-          <label for="number" id="number-label">Age
-          <input
-            type="number"
-            class="form-control"
-            id="number"
-            min="16"
-            max="99"
-            placeholder="Age"
-            required
-          />
-        </label>
-        </div>
-        <!--end of name-email-age-->
+            We'll never share your email with anyone else.</small>
+
+
+          <label for="number" id="number-label">Age</label>
+            <input type="number" class="form-control" id="number" min="16" max="99" placeholder="Age" required />
+ 
+
+          <label for="tel" id="tel">phone</label>
+          <input type="tel" placeholder="phone number" class="form-control" min="9">
+        </fieldset>
+      <!--end of name-email-age-->
 
         <!--Checkbox options-->
-        <div class="form-group">
+        <fieldset class="form-group">
+          <legend>web page preferences</legend>
           <p>Which Operating Systems do you use regularly:</p>
           <div class="checkbox">
             <label><input type="checkbox" value="1" />Android</label>
@@ -81,55 +64,38 @@
           <div class="checkbox">
             <label><input type="checkbox" value="6" />Other</label>
           </div>
-        </div>
-        <!--end of Checkbox options-->
+          <!--end of Checkbox options-->
 
-        <!--Radio buttons-->
-        <div class="form-group radio">
-          <p>Which device are you viewing this page on:</p>
-          <label for="Option 1" class="radio-inline">
-            <input
-              type="radio"
-              value="option 1"
-              name="optradio"
-              checked
-            />Desktop</label
-          >
+          <!--Radio buttons-->
+          <div class="form-group radio">
+            <p>Which device are you viewing this page on:</p>
+            <label for="Option 1" class="radio-inline">
+              <input type="radio" value="option 1" name="optradio" checked />Desktop</label>
 
-          <label for="Option 2" class="radio-inline">
-            <input
-              type="radio"
-              value="option 2"
-              name="optradio"
-            />Smartphone</label
-          >
+            <label for="Option 2" class="radio-inline">
+              <input type="radio" value="option 2" name="optradio" />Smartphone</label>
 
-          <label for="Option 3" class="radio-inline">
-            <input type="radio" value="option 3" name="optradio" />Tablet</label
-          >
-        </div>
-        <!--end of Radio buttons-->
+            <label for="Option 3" class="radio-inline">
+              <input type="radio" value="option 3" name="optradio" />Tablet</label>
+          </div>
+          <!--end of Radio buttons-->
 
-        <!--dropdown-->
-        <div class="form-group">
-          <label for="dropdown">Prefered JS Framework</label>
-          <select
-            class="form-control"
-            id="dropdown"
-            required
-            title="frameworks"
-          >
-            <option title="JS" disabled>Javascript</option>
-            <option>Angular</option>
-            <option>React</option>
-            <option>Vue JS</option>
-            <option>JQuery</option>
-          </select>
-        </div>
-        <!--end of dropdown-->
+          <!--dropdown-->
+          <div class="form-group">
+            <label for="dropdown">Prefered JS Framework</label>
+            <select class="form-control" id="dropdown" required title="frameworks">
+              <option title="JS" disabled>Javascript</option>
+              <option>Angular</option>
+              <option>React</option>
+              <option>Vue JS</option>
+              <option>JQuery</option>
+            </select>
+          </div>
+          <!--end of dropdown-->
+        </fieldset>
 
         <!--Comment and submit-->
-        <div class="form-group">
+        <fieldset class="form-group">
           <label for="comment">Add any suggestions to imporve this page</label>
           <textarea
             class="form-control"
@@ -140,7 +106,7 @@
             placeholder="Enter your comment here..."
           >
           </textarea>
-        </div>
+        </fieldset>
 
         <button type="submit" id="submit">
           <a href="https://github.com/ShakexSempe" target="_blank">Submit</a>
