@@ -47,9 +47,9 @@
       
 
         <!--Checkbox options-->
-        <fieldset class="form-group options">
+        <fieldset class="form-group checkbox">
           <legend>web page preferences</legend>
-          <p>Which Operating Systems do you use regularly:</p>
+          <p>Most regularly used Operating Systems:</p>
           <div class="checkbox">
             <label><input type="checkbox" value="1" />Android</label>
           </div>
@@ -72,23 +72,26 @@
 
           <!--Radio buttons-->
           <div class="form-group radio">
-            <p>Which device are you viewing this page on:</p>
+            <p>Webpage devices</p>
             <label for="Option 1" class="radio-inline">
-              <input type="radio" value="option 1" name="optradio" checked />Desktop</label>
+              <input type="radio" value="option 1" name="optradio" />Desktop</label>
 
             <label for="Option 2" class="radio-inline">
-              <input type="radio" value="option 2" name="optradio" />Smartphone</label>
+              <input type="radio" value="option 2" name="optradio" checked />Responsive</label>
 
             <label for="Option 3" class="radio-inline">
               <input type="radio" value="option 3" name="optradio" />Tablet</label>
-          </div>
+                    
+          <label for="Option 3" class="radio-inline">
+            <input type="radio"  value="option 3" name="optradio" />smartphone</label>
+        </div>
           <!--end of Radio buttons-->
 
           <!--dropdown-->
           <div class="form-group">
             <label for="dropdown">Prefered JS Framework</label>
             <select class="form-control" id="dropdown" required title="frameworks">
-              <option title="JS" disabled>Javascript</option>
+              <option title="JS" selected="selected" disabled>Javascript</option>
               <option>Angular</option>
               <option>React</option>
               <option>Vue JS</option>
