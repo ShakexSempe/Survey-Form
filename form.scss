@@ -37,6 +37,46 @@ body {
             font-size: 1.3em;
             opacity: .9;
         }
+        #toggle {
+            display: block;
+            position: absolute;
+            right: 1em;
+            top: 1em;
+        }
+        nav {
+            position: absolute;
+            right: -100%;
+            top: 10vh;
+            width: 100%;
+            background-color: #000;
+            height: 50vh;
+            transition: .5s ease;
+
+            ul {
+                margin: 5vh 0;
+                // border: 1px solid red;
+                
+                li {
+                    // background-color: pink;
+                    padding: 1em .5em;
+                    text-align: left;
+                    list-style: none;
+
+                    a {
+                        border-bottom: 2px solid green;
+                        padding: .5em 0;
+                        width: 30%;
+                        display: block;
+                        text-decoration: none;
+                        color: #f4f4f4;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+            &.active {
+                right: -60%;
+            }
+        }
         @media (max-width: 768px) {
             height: 8vh;
             #title {
@@ -44,6 +84,9 @@ body {
             }
             #description {
                 font-size: .8em;
+            }
+            nav {
+                top: 8vh;
             }
         }
     }

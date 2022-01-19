@@ -27,13 +27,44 @@
       font-weight: 500;
       font-size: 1.3em;
       opacity: .9; }
+    .bg header #toggle {
+      display: block;
+      position: absolute;
+      right: 1em;
+      top: 1em; }
+    .bg header nav {
+      position: absolute;
+      right: -100%;
+      top: 10vh;
+      width: 100%;
+      background-color: #000;
+      height: 50vh;
+      transition: .5s ease; }
+      .bg header nav ul {
+        margin: 5vh 0; }
+        .bg header nav ul li {
+          padding: 1em .5em;
+          text-align: left;
+          list-style: none; }
+          .bg header nav ul li a {
+            border-bottom: 2px solid green;
+            padding: .5em 0;
+            width: 30%;
+            display: block;
+            text-decoration: none;
+            color: #f4f4f4;
+            text-transform: capitalize; }
+      .bg header nav.active {
+        right: -60%; }
     @media (max-width: 768px) {
       .bg header {
         height: 8vh; }
         .bg header #title {
           font-size: 1em; }
         .bg header #description {
-          font-size: .8em; } }
+          font-size: .8em; }
+        .bg header nav {
+          top: 8vh; } }
   .bg .form-container {
     position: relative;
     background-color: #f4f4f4;
