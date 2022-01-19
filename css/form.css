@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -28,7 +29,7 @@
       opacity: .9; }
     @media (max-width: 768px) {
       .bg header {
-        height: 7vh; }
+        height: 8vh; }
         .bg header #title {
           font-size: 1em; }
         .bg header #description {
@@ -36,16 +37,14 @@
   .bg .form-container {
     position: relative;
     background-color: #f4f4f4;
-    opacity: 0.98;
     padding: 1em;
     margin: 20vh auto 5vh;
     width: 80%;
-    border-radius: 10px;
-    opacity: .9; }
+    border-radius: 10px; }
     @media (max-width: 768px) {
       .bg .form-container {
         width: 100%;
-        margin: 15vh auto;
+        margin: 15vh auto 0;
         border-radius: 0;
         border: none; } }
     .bg .form-container small {
@@ -62,6 +61,11 @@
       display: flex;
       flex-direction: column;
       position: relative; }
+      .bg .form-container fieldset .form-group label {
+        display: flex;
+        justify-content: flex-start; }
+      .bg .form-container fieldset .form-control {
+        font-size: 1em; }
       .bg .form-container fieldset legend {
         margin-bottom: .5em;
         text-transform: capitalize;
@@ -81,7 +85,8 @@
       .bg .form-container fieldset input, .bg .form-container fieldset select, .bg .form-container fieldset textarea {
         margin-bottom: 1em;
         border-radius: 5px;
-        padding: .5em; }
+        padding: .5em;
+        border: 2px #045304 solid; }
         .bg .form-container fieldset input::placeholder, .bg .form-container fieldset select::placeholder, .bg .form-container fieldset textarea::placeholder {
           font-size: .8em; }
         .bg .form-container fieldset input:invalid, .bg .form-container fieldset select:invalid, .bg .form-container fieldset textarea:invalid {
@@ -90,10 +95,13 @@
           background-color: #227f8f34; }
       .bg .form-container fieldset textarea {
         width: 100%; }
+    .bg .form-container .checkbox input {
+      margin-right: 1em; }
     .bg .form-container .checkbox p {
-      font-size: 1.4em;
+      font-size: 1.5em;
       margin-bottom: .5em;
       text-decoration: underline;
+      color: #146405;
       text-align: left; }
       @media (max-width: 768px) {
         .bg .form-container .checkbox p {
@@ -109,8 +117,10 @@
       font-size: 1.3em; }
     .bg .form-container #submit {
       display: block;
+      color: #f4f4f4;
       margin: 1em auto;
-      padding: .3em 2em;
+      padding: .3em 1em;
+      width: 50%;
       cursor: pointer;
       border: none;
       outline: none;
@@ -127,19 +137,31 @@
         border-radius: 20px;
         width: 100%;
         height: 100%;
-        background-color: darkgreen;
+        background-color: yellow;
         transition: .3s ease; }
       .bg .form-container #submit::before {
         z-index: -1;
+        background-image: linear-gradient(0deg, #014b01, green);
         box-shadow: inset 3px 3px 5px #ddda, inset -3px -3px 5px #000a; }
       .bg .form-container #submit::after {
         z-index: -1;
         opacity: 0;
+        background-image: linear-gradient(0deg, green, #014b01);
         box-shadow: inset 3px 3px 5px #000a, inset -3px -3px 5px #ddda; }
-      .bg .form-container #submit:hover::before {
-        opacity: 0; }
-      .bg .form-container #submit:hover::after {
-        opacity: 1; }
+      .bg .form-container #submit:hover {
+        transform: scale(0.98); }
+        .bg .form-container #submit:hover::before {
+          opacity: 0; }
+        .bg .form-container #submit:hover::after {
+          opacity: 1; }
       .bg .form-container #submit:active {
         transition: .2s;
-        transform: scale(0.9); }
+        transform: scale(0.95); }
+  .bg footer {
+    background-color: #000;
+    padding: 5vh 0;
+    text-align: center; }
+    .bg footer p {
+      color: #f4f4f4; }
+    .bg footer #date {
+      color: #05ad05; }
