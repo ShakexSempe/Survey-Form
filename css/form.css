@@ -11,39 +11,43 @@
   .bg header {
     position: fixed;
     width: 100%;
-    height: 15vh;
+    height: 10vh;
     z-index: 5;
     color: #fff;
     text-align: center;
     margin: .5em auto;
-    padding: 1em;
+    padding: .5em .5em 0;
     background-color: #000;
     margin: 0 auto; }
     .bg header #title {
-      font-size: 2em; }
+      font-size: 1.5em; }
     .bg header #description {
       color: #07df07;
       font-weight: 500;
       font-size: 1.3em;
       opacity: .9; }
     @media (max-width: 768px) {
-      .bg header #title {
-        font-size: 1.3em; }
-      .bg header #description {
-        font-size: .8em; } }
+      .bg header {
+        height: 7vh; }
+        .bg header #title {
+          font-size: 1em; }
+        .bg header #description {
+          font-size: .8em; } }
   .bg .form-container {
     position: relative;
     background-color: #f4f4f4;
     opacity: 0.98;
     padding: 1em;
-    margin: 17vh auto;
-    width: 50%;
+    margin: 20vh auto 5vh;
+    width: 80%;
     border-radius: 10px;
-    box-shadow: inset 3px 3px 5px #ddda, inset -3px -3px 5px #000a;
     opacity: .9; }
     @media (max-width: 768px) {
       .bg .form-container {
-        width: 90%; } }
+        width: 100%;
+        margin: 15vh auto;
+        border-radius: 0;
+        border: none; } }
     .bg .form-container small {
       font-style: italic;
       margin-bottom: 1em; }
@@ -52,21 +56,12 @@
       overflow: hidden;
       padding: .5em 1em;
       text-align: left;
-      border: none;
+      border: 2px solid green;
       border-radius: 5px;
       height: auto;
       display: flex;
       flex-direction: column;
       position: relative; }
-      .bg .form-container fieldset::after {
-        position: absolute;
-        content: '';
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        box-shadow: inset 2px 2px 5px rgba(146, 216, 128, 0.667), inset -2px -2px 5px #146405; }
       .bg .form-container fieldset legend {
         margin-bottom: .5em;
         text-transform: capitalize;
