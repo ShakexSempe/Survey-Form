@@ -41,8 +41,22 @@ body {
             display: block;
             position: absolute;
             right: 1em;
-            top: 1em;
+            top: .5em;
             cursor: pointer;
+            height: 2em;
+            width: 2em;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            display: grid;
+            place-items: center;
+
+            .bar {
+                width: 60%;
+                margin: 0 auto;
+                height: 2px;
+                background-color: #fff;
+
+            }
         }
         nav {
             position: absolute;
