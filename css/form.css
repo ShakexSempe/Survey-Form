@@ -69,7 +69,6 @@
       .bg header #toggle.active {
         border: none; }
         .bg header #toggle.active .bar {
-          width: 50%;
           height: 3px;
           background-color: transparent; }
           .bg header #toggle.active .bar::before {
