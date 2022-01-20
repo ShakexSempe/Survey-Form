@@ -93,7 +93,7 @@ body {
             }
         }
         @media (max-width: 768px) {
-            height: 8vh;
+            height: 9vh;
             #title {
                 font-size: 1em;
             }
@@ -118,6 +118,7 @@ body {
                 margin: 10vh auto 0;
                 border-radius: 0;
                 border: none;
+                padding: 1em 0;
         }
         small {
             font-style: italic;
@@ -125,9 +126,12 @@ body {
         }
 
         fieldset {
+            @media (max-width: 768px){
+                border-radius: 0;
+            }
             margin: 2em auto;
             overflow: hidden;
-            padding: .5em 1em;
+            padding: 1em;
             text-align: left;
             border: 2px solid green;
             border-radius: 5px;
