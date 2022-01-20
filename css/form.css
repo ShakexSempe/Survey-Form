@@ -19,16 +19,20 @@
     color: #fff;
     text-align: center;
     margin: .5em auto;
-    padding: .5em .5em 0;
+    padding: 0;
     background-color: #000;
     margin: 0 auto; }
     .bg header #title {
       font-size: 1.5em; }
-    .bg header #description {
-      color: #07df07;
-      font-weight: 500;
-      font-size: 1em;
-      opacity: .9; }
+      .bg header #title a {
+        text-decoration: none;
+        color: #f4f4f4; }
+      .bg header #title #description {
+        color: #07df07;
+        font-weight: 500;
+        font-size: .7em;
+        opacity: .9;
+        display: block; }
     .bg header #toggle {
       display: block;
       position: absolute;

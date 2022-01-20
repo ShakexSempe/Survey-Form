@@ -22,20 +22,26 @@
         color: #fff;
         text-align: center;
         margin: .5em auto;
-        padding: .5em .5em 0;
+        padding: 0;
         // border: 1px solid red;
         background-color: #000;
         // overflow: hidden;
         margin: 0 auto;
         #title {
             font-size: 1.5em;
+            a {
+                text-decoration: none;
+                color: #f4f4f4;
+            }
+            #description {
+                color: rgb(7, 223, 7);
+                font-weight: 500;
+                font-size: .7em;
+                opacity: .9;
+                display: block;
+            }
         }
-        #description {
-            color: rgb(7, 223, 7);
-            font-weight: 500;
-            font-size: 1em;
-            opacity: .9;
-        }
+       
         #toggle {
             display: block;
             position: absolute;
