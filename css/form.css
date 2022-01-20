@@ -25,7 +25,7 @@
     .bg header #description {
       color: #07df07;
       font-weight: 500;
-      font-size: 1.3em;
+      font-size: 1em;
       opacity: .9; }
     .bg header #toggle {
       display: block;
@@ -51,23 +51,43 @@
       width: 100%;
       background-color: #000;
       height: 50vh;
-      transition: .5s ease; }
+      transition: .5s ease;
+      border: 3px solid green;
+      border-radius: 5px; }
       .bg header nav ul {
         margin: 5vh 0; }
         .bg header nav ul li {
           padding: 1em .5em;
           text-align: left;
-          list-style: none; }
+          list-style: none;
+          border-bottom: 2px solid green;
+          width: 30%;
+          transition: .2s; }
           .bg header nav ul li a {
-            border-bottom: 2px solid green;
             padding: .5em 0;
-            width: 30%;
+            width: 100%;
             display: block;
             text-decoration: none;
             color: #f4f4f4;
-            text-transform: capitalize; }
+            text-transform: capitalize;
+            transform: translateX(50%);
+            transition: .5s;
+            opacity: 0; }
+          .bg header nav ul li:hover {
+            background-color: #333; }
       .bg header nav.active {
         right: -60%; }
+        .bg header nav.active ul li {
+          transform: translateX(0); }
+          .bg header nav.active ul li a {
+            transform: translateX(0%);
+            opacity: 1; }
+          .bg header nav.active ul li:nth-child(1) a {
+            transition-delay: .2s; }
+          .bg header nav.active ul li:nth-child(2) a {
+            transition-delay: .3s; }
+          .bg header nav.active ul li:nth-child(3) a {
+            transition-delay: .4s; }
     @media (max-width: 768px) {
       .bg header {
         height: 9vh; }
@@ -76,7 +96,8 @@
         .bg header #description {
           font-size: .8em; }
         .bg header nav {
-          top: 8vh; } }
+          top: 8vh;
+          height: 100vh; } }
   .bg .form-container {
     position: relative;
     background-color: #f4f4f4;
