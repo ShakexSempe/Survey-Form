@@ -3,7 +3,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Nunito', sans-serif; }
+  font-family: 'Nunito', sans-serif;
+  scroll-behavior: smooth;
+  scroll-padding-top: 15vh; }
 
 .bg {
   width: 100%;
@@ -38,12 +40,17 @@
       border: 1px solid #fff;
       border-radius: 5px;
       display: grid;
-      place-items: center; }
+      place-items: center;
+      transition: .2s; }
       .bg header #toggle .bar {
         width: 60%;
         margin: 0 auto;
         height: 2px;
         background-color: #fff; }
+      .bg header #toggle:hover {
+        transform: scale(0.96); }
+      .bg header #toggle:active {
+        transform: scale(0.9); }
     .bg header nav {
       position: absolute;
       right: -100%;

@@ -20,13 +20,13 @@
         <nav id="navbar">
             <ul>
               <li>
-                <a class="nav-link" href="#">basic info</a>
+                <a class="nav-link" href="#basic">basic info</a>
               </li>
               <li>
-                <a class="nav-link" href="#">contact info</a>
+                <a class="nav-link" href="#contact">contact info</a>
               </li>
               <li>
-                <a class="nav-link" href="#">webpage</a>
+                <a class="nav-link" href="#webpage">webpage</a>
               </li>
             </ul>
         </nav>
@@ -36,7 +36,7 @@
       <!--Form-->
       <!--name-email-age-->
       <form class="form-container" id="survey-form">
-        <fieldset class="form-group">
+        <fieldset id="basic" class="form-group">
           <legend>basic info</legend>
           <label for="name" id="name-label">Name*</label>
           <input type="text" class="form-control" id="name" placeholder="name & last-name" required/>
@@ -47,7 +47,7 @@
 
            </fieldset>
 
-        <fieldset class="form-group">
+        <fieldset id="contact" class="form-group">
           <legend>contact info</legend>
           <label for="email" id="email-label">Email Address*</label>
           <input type="email" class="form-control" id="email" placeholder="Enter email address"
@@ -62,7 +62,7 @@
       
 
         <!--Checkbox options-->
-        <fieldset class="form-group checkbox">
+        <fieldset id="webpage" class="form-group checkbox">
           <legend>web page preferences</legend>
           <p>Most regularly used Operating Systems:</p>
           <div class="checkbox">
