@@ -224,7 +224,7 @@
   justify-content: flex-start;
 }
 .container .form-container fieldset .form-control {
-  font-size: 1em;
+  font-size: 1rem;
 }
 .container .form-container fieldset legend {
   margin-bottom: 0.5em;
@@ -239,11 +239,16 @@
 .container .form-container fieldset label {
   color: #146405;
   color: #0a0c0f;
-  font-size: 1.3em;
+  font-size: 1rem;
   font-weight: 700;
   text-transform: capitalize;
   margin-top: 0.5rem;
   padding: 0.25rem 0;
+}
+@media (min-width: 768px) {
+  .container .form-container fieldset label {
+    font-size: 1.25rem;
+  }
 }
 .container .form-container fieldset input, .container .form-container fieldset select, .container .form-container fieldset textarea {
   margin-bottom: 1em;
@@ -252,7 +257,7 @@
   border: 2px #29323c solid;
 }
 .container .form-container fieldset input::placeholder, .container .form-container fieldset select::placeholder, .container .form-container fieldset textarea::placeholder {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   text-transform: capitalize;
   opacity: 0.5;
   letter-spacing: 0.1rem;
@@ -275,16 +280,16 @@
   margin-right: 1em;
 }
 .container .form-container .checkbox p {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 0.5em;
-  text-decoration: none;
+  text-decoration: underline;
   color: #0a0c0f;
   text-align: left;
 }
 @media (max-width: 768px) {
   .container .form-container .checkbox p {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
   }
 }
 .container .form-container .checkbox label {
@@ -298,15 +303,15 @@
 }
 .container .form-container .dropdown label {
   color: #0a0c0f;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 @media (max-width: 768px) {
   .container .form-container .dropdown label {
-    font-size: 1.25rem;
+    font-size: 1.05rem;
   }
 }
 .container .form-container .dropdown select {
-  font-size: 1.3em;
+  font-size: 1rem;
   padding: 0.5rem 2rem;
 }
 .container .form-container #submit {
