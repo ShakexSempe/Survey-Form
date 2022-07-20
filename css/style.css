@@ -29,6 +29,8 @@
 @media (max-width: 768px) {
   .container header {
     height: 8vh;
+    text-align: left;
+    justify-content: space-between;
   }
 }
 .container header #title {
@@ -58,6 +60,7 @@
   height: 2rem;
   width: 2rem;
   border: 0.1rem solid #fff;
+  border: none;
   border-radius: 0.5rem;
   display: grid;
   place-items: center;
@@ -318,7 +321,7 @@
   display: block;
   color: #f4f4f4;
   margin: 1rem auto;
-  padding: 0.5rem 1rem;
+  padding: 0.7rem 1rem;
   width: 50%;
   cursor: pointer;
   border: none;
