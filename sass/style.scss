@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+@import 'variables';
 
 * {
     margin: 0;
@@ -8,50 +9,64 @@
     scroll-behavior: smooth;
     scroll-padding-top: 15vh;
 }
-.bg {
+.container {
     width: 100%;
-    background-color: #000;
     overflow-x: hidden;
+    background-color: $overlay-blue-darker;
 
 
     header {
         position: fixed;
         width: 100%;
         height: 10vh;
+        padding: .5rem 1rem ;
         z-index: 5;
         color: #fff;
         text-align: center;
-        margin: .5em auto;
-        padding: 0;
+        // text-align: left;
         // border: 1px solid red;
-        background-color: #000;
+        background-color: $overlay-blue-darker;
         // overflow: hidden;
-        margin: 0 auto;
-        #title {
-            font-size: 1.5em;
-            a {
-                text-decoration: none;
-                color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: 768px) {
+            height: 8vh;
+            #title {
+                
             }
             #description {
-                color: rgb(7, 223, 7);
-                font-weight: 500;
-                font-size: .7em;
-                opacity: .9;
-                display: block;
             }
         }
-       
+        #title {
+                font-size: 1.5rem;
+                @media (max-width: 768px) {
+                    font-size: 1.15rem;
+                }
+                a {
+                    text-decoration: none;
+                    color: #f4f4f4;
+                }
+
+                #description {
+                    color: $gold;
+                    font-weight: 400;
+                    font-size: .8rem;
+                    display: block;
+                }
+            
+        }
+
         #toggle {
             display: block;
             position: absolute;
-            right: 1em;
+            right: 1rem;
             top: .5em;
             cursor: pointer;
-            height: 2em;
-            width: 2em;
-            border: 1px solid #fff;
-            border-radius: 5px;
+            height: 2rem;
+            width: 2rem;
+            border: .1rem solid #fff;
+            border-radius: .5rem;
             display: grid;
             place-items: center;
             transition: .5s;
@@ -61,6 +76,7 @@
                 margin: 0 auto;
                 height: 2px;
                 background-color: #fff;
+                background-color: $gold;
                 position: relative;
                 transition: .5s;
 
@@ -71,7 +87,7 @@
                     height: 100%;
                     top: 0;
                     left: 0;
-                    background-color: #f4f4f4;
+                    background-color: $gold;
                     transition: .5s;
                 }
                 &::before {
@@ -88,12 +104,12 @@
                     height: 3px;
                     background-color: transparent;
                     &::before {
-                        background-color: #f4f4f4;
+                        background-color: $gold;
                         transform: skewY(40deg);
                         top: 0;
                     }
                     &::after {
-                        background-color: #f4f4f4;
+                        background-color: $gold;
                         transform: skewY(-40deg);
                         top: 0;
 
@@ -113,10 +129,10 @@
             right: -100%;
             top: 10vh;
             width: 100%;
-            background-color: #000;
+            background-color: $overlay-blue-darker;
             height: 50vh;
             transition: .5s ease;
-            border: 3px solid green;
+            border: .2rem solid $overlay-blue-dark;
             border-radius: 5px;
 
             ul {
@@ -128,7 +144,7 @@
                     padding: 1em .5em;
                     text-align: left;
                     list-style: none;
-                    border-bottom: 2px solid green;
+                    border-bottom: .2rem solid $overlay-blue-dark;
                     width: 50%;
                     transition: .2s;
                     // transform: translateX(50%);
@@ -138,7 +154,7 @@
                         width: 100%;
                         display: block;
                         text-decoration: none;
-                        color: #f4f4f4;
+                        color: $gold;
                         text-transform: capitalize;
                         transform: translateX(50%);
                         transition: .5s;
@@ -180,14 +196,6 @@
             }
         }
         @media (max-width: 768px) {
-            
-            height: 9vh;
-            #title {
-                font-size: 1em;
-            }
-            #description {
-                font-size: .8em;
-            }
             nav {
                 top: 8vh;
                 height: 100vh;
@@ -207,10 +215,11 @@
         border-radius: 10px;
         @media (max-width:768px) {
                 width: 100%;
-                margin: 10vh auto 0;
+                margin: 8vh auto 0;
+                padding: 1rem;
                 border-radius: 0;
                 border: none;
-                padding: 1em 0;
+                // border: 2px solid red;
         }
         small {
             font-style: italic;
@@ -219,14 +228,21 @@
 
         fieldset {
             @media (max-width: 768px){
-                border-radius: 0;
+                border-radius: .5rem;
+                padding: 1rem .5rem;
+
+                legend {
+                    color: red;
+                    margin: auto;
+                }
             }
-            margin: 2em auto;
+            margin: 2rem auto;
             overflow: hidden;
             padding: 1em;
             text-align: left;
             border: 2px solid green;
-            border-radius: 5px;
+            border: 2px solid $overlay-blue-dark;
+            border-radius: .5rem;
             // min-height: 100vh;
             height: auto;
             display: flex;
@@ -245,41 +261,49 @@
             legend {
                 margin-bottom: .5em;
                 text-transform: capitalize;
-                color: #ddd;
-                font-size: 1.2em;
+                color: $gold;
+                font-size: 1.15rem;
                 padding: .2em .5em;
-                border-radius: 5px;
-                background-color: #146405;
-                box-shadow: inset 2px 2px 5px #fffa,
-                            inset -2px -2px 5px #000a;
+                border-radius: .5rem;
+                background: $overlay-dark-btn;
+                box-shadow: $box-light-top-sm;
             }
 
             label {
                 color: rgb(20, 100, 5);
+                color: $overlay-blue-darker;
                 font-size: 1.3em;
-                font-weight: 800;
+                font-weight: 700;
                 text-transform: capitalize;
-                margin-top: .5em;
-                padding: 0 0 .2em .2em;
+                margin-top: .5rem;
+                padding: .25rem 0;
             }
 
             input, select, textarea {
                 margin-bottom: 1em;
                 border-radius: 5px;
                 padding: .5em;
-                border: 2px rgb(4, 83, 4) solid;
+                border: 2px $overlay-blue-dark solid;
 
                 &::placeholder {
-                    font-size: .8em;
+                    font-size: .9rem;
+                    text-transform: capitalize;
+                    opacity: .5;
+                    letter-spacing: .1rem;
+                    transition: .3s;
                 }
 
                 &:invalid {
-                    background-color: #00800034;
+                    background-color: #ddd;
                 }
-                &:focus {
+                &:focus, &:hover {
                     background-color: #227f8f34;
-
+                    &::placeholder {
+                        opacity: 1;
+                        letter-spacing: normal;
+                    }
                 }
+                
             }
             textarea {
                 width: 100%;
@@ -290,17 +314,20 @@
                 margin-right: 1em;
             }
             p {
-                font-size: 1.5em;
+                font-size: 1.5rem;
+                font-weight: 700;
                 margin-bottom: .5em;
-                text-decoration: underline;
-                color: rgb(20, 100, 5);
+                text-decoration: none;
+                color: $overlay-blue-darker;
                 @media (max-width:768px){
-                    font-size: 1.2em;
+                    font-size: 1.25rem;
                 }
                 text-align: left;
             }
             label {
-                color: #000;
+                color: $overlay-blue-dark;
+                font-weight: 400;
+                font-size: 1rem;
             }
         }
         .radio {
@@ -311,63 +338,79 @@
         }
         .dropdown {
             label {
-                color: rgb(20, 100, 5);           
+                color: $overlay-blue-darker;   
+                font-size: 1.5rem;
+                @media (max-width: 768px) {
+                    font-size: 1.25rem;
+                }       
             }
             select {
                 font-size: 1.3em;
+                padding: .5rem 2rem;
             }
         }
 
         #submit {
             display: block;
             color: #f4f4f4;
-            margin: 1em auto;
-            padding: .3em 1em;
+            margin: 1rem auto;
+            padding: .5rem 1rem;
             width: 50%;
             cursor: pointer;
             border: none;
             outline: none;
-            font-weight: 600;
-            font-size: 1.2rem;
+            border-radius: 1rem;
+            font-weight: 500;
+            font-size: 1.25rem;
+            letter-spacing: .05rem;
+            text-transform: capitalize;
             transition: .2s ease-in-out;
             position: relative;
             z-index: 1;
-
+            @media (max-width: 500px) {
+                width: 100%;
+            }
             &::before,
             &::after {
                 position: absolute;
                 content: '';
                 top: 0;
                 left: 0;
-                border-radius: 20px;
+                border-radius: 1rem;
                 width: 100%;
                 height: 100%;
-                background-color: yellow;
-                transition: .3s ease;
+                background-color: $overlay-blue-light;
+                transition: .25s ease;
+                z-index: -1;
             }
             &::before {
-            z-index: -1;
-            background-image: linear-gradient(0deg, rgb(1, 75, 1), green);
-            box-shadow: inset 3px 3px 5px #ddda,
-                        inset -3px -3px 5px #000a;
+            background: $button-crimson;
+            box-shadow: $box-light-top-sm;
             }
             &::after {
-                z-index: -1;
                 opacity: 0;
-                background-image: linear-gradient(0deg , green, rgb(1, 75, 1));
-                box-shadow: inset 3px 3px 5px #000a,
-                            inset -3px -3px 5px #ddda;
+                background: $button-crimson-hover;
+                box-shadow: $box-light-top-sm-hover;
                 }
-            &:hover {
-                &::before {opacity: 0;}
-                &::after {opacity: 1;}
-                transform: scale(.98);
+                @media (min-width: 768px) {
+                    &:hover {
+                        letter-spacing: normal;
+                        transition: .25s;
+                        transform: scale(.97);
+                        &::before {opacity: 0;}
+                        &::after {opacity: 1;}
+                    }
+                }
+
+            @media (max-width: 768px) {
+                &:active {
+                    letter-spacing: normal;
+                    transition: .25s;
+                    transform: scale(.97);
+                    &::before {opacity: 0;}
+                    &::after {opacity: 1;}
+                }
             }
-            &:active {
-                transition: .2s;
-                transform: scale(.95);
-            }
-        
         }
     }
     footer {
@@ -379,7 +422,8 @@
             color: #f4f4f4;
         }
         #date {
-            color: hsl(120, 94%, 35%)
+            color: hsl(120, 94%, 35%);
+            color: $gold;
         }
     }
 }
