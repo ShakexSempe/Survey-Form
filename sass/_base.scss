@@ -33,10 +33,14 @@ body {
 
 
 .container {
-    background-color: variables.$overlay-blue-darker;
+    background-color: #f4f4f4;
     color: variables.$overlay-blue-darker;
     padding-top: 10vh;
-
+    
+    @media (prefers-color-scheme: dark) {
+        background-color: variables.$overlay-blue-darker;
+        color: #f4f4f4;
+    }
 
     
 

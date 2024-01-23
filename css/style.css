@@ -26,9 +26,15 @@ body p {
 }
 
 .container {
-  background-color: #0a0c0f;
+  background-color: #f4f4f4;
   color: #0a0c0f;
   padding-top: 10vh;
+}
+@media (prefers-color-scheme: dark) {
+  .container {
+    background-color: #0a0c0f;
+    color: #f4f4f4;
+  }
 }
 .container footer {
   color: #f4f4f4;
@@ -45,7 +51,6 @@ form {
   padding: 5vh 5vw;
   margin: 0 auto;
   width: 100%;
-  background-color: #f4f4f4;
 }
 @media (min-width: 820px) {
   form {
@@ -128,7 +133,6 @@ form .checkbox p {
   text-align: left;
 }
 form .checkbox label {
-  color: #29323c;
   font-weight: 400;
   font-size: 1rem;
 }
