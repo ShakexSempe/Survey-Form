@@ -10,19 +10,18 @@
 
   <body>
   
-    <section class="container-fluid container">
+    <div class="container">
       <!--Header-->
       <header class="header">
 
-          <h1 id="title"> 
-            <a href="#">FreeCodeCamp Survey Form
+          <h1 id="title">FreeCodeCamp Survey Form
               <span id="description">Responsive Web Design Project</span>
-            </a>
           </h1>
         
         <div id="toggle">
           <div class="bar"></div>
         </div>
+
         <nav id="navbar">
             <ul>
               <li>
@@ -36,12 +35,12 @@
               </li>
             </ul>
         </nav>
-      </header>
-      <!--end of Header-->
 
-      <!--Form-->
-      <!--name-email-age-->
-      <form class="form-container" id="survey-form">
+      </header>
+
+      <!-- FORM -->
+      <form id="survey-form">
+        
         <fieldset id="basic" class="form-group">
           <legend>basic info</legend>
           <label for="name" id="name-label">Name*</label>
@@ -64,8 +63,6 @@
           <input type="tel" placeholder="phone number" class="form-control" min="9">
           
         </fieldset>
-      <!--end of name-email-age-->
-      
 
         <!--Checkbox options-->
         <fieldset id="webpage" class="form-group checkbox">
@@ -138,14 +135,15 @@
 
         <button id="submit">submit form</button>
       </form>
+
       <footer>
         <p>Copyright&copy; Shakex Sempe</p>
         <p id="date"></p>
       </footer>
-    </section>
-    <!-- SCROLL SCRIPT -->
-    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
-    <script>
+
+    </div>
+
+<script>
       const date = document.getElementById('date');
       date.innerHTML = new Date().getFullYear();
     </script>

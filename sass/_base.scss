@@ -1,0 +1,55 @@
+@use './variables';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    scroll-behavior: smooth;
+    scroll-padding-top: 10vh;
+}
+
+body {
+    font-family: sans-serif;
+    max-width: 100%;
+    
+    a {
+        text-decoration-color: transparent;
+        text-transform: capitalize;
+        text-underline-offset: 4px;
+        color: inherit;
+        transition: 350ms ease;
+    
+        &:hover {
+            text-decoration-color: #fff;
+            text-underline-offset: 2px;
+    
+        }
+    }
+
+    p {
+        line-height: 1.6;
+    }
+}
+
+
+.container {
+    background-color: variables.$overlay-blue-darker;
+    color: variables.$overlay-blue-darker;
+    padding-top: 10vh;
+
+
+    
+
+    footer {
+        color: #f4f4f4;
+        background-color: #000;
+        padding: 5vh 0;
+        text-align: center;
+
+
+        #date {
+            color: variables.$gold;
+        }
+    }
+
+}
