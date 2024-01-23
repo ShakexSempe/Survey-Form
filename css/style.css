@@ -62,28 +62,29 @@ form small {
   margin-bottom: 1em;
 }
 form fieldset {
-  margin-bottom: 10vh;
-  overflow: hidden;
-  padding: 2.5rem 1rem 1rem;
-  text-align: left;
-  border: 2px solid #29323c;
-  height: auto;
+  position: relative;
   display: flex;
   flex-direction: column;
-  position: relative;
+  margin-bottom: 10vh;
+  padding: 2.5rem 1rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  transition: 350ms;
 }
 form fieldset legend {
   position: absolute;
   top: 0;
   right: 0;
-  margin-bottom: 0.5em;
-  text-transform: capitalize;
-  color: #ead2a1;
-  font-size: 0.85rem;
-  font-size: clamp(0.85rem, 1.5vw, 1rem);
   padding: 0.5rem;
   background: linear-gradient(0deg, #0a0c0f, #20262e);
-  box-shadow: inset 2px 2px 3px rgba(221, 221, 221, 0.25), inset -2px -2px 3px #000a, 2px 2px 3px rgba(0, 0, 0, 0.25);
+  color: #ead2a1;
+  text-transform: capitalize;
+  font-size: 0.85rem;
+  font-size: clamp(0.85rem, 1.5vw, 1rem);
+  border-bottom-left-radius: 0.25rem;
+  box-shadow: inset 2px 2px 3px rgba(221, 221, 221, 0.15), inset -2px -2px 3px #000a, 2px 2px 3px rgba(0, 0, 0, 0.15);
 }
 form .form-group label {
   display: flex;
@@ -92,30 +93,33 @@ form .form-group label {
 form .form-control {
   font-size: 1rem;
 }
-form label {
-  font-size: 1rem;
+form label, form .label {
+  margin-bottom: 0.5rem;
+  font-size: 1.01rem;
   font-weight: 600;
   text-transform: capitalize;
-  margin-bottom: 0.5rem;
+  text-wrap: balance;
 }
 form input, form select, form textarea {
-  margin-bottom: 1em;
-  border-radius: 5px;
   padding: 0.5em;
-  border: 2px #29323c solid;
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  outline: 1px solid transparent;
+  transition: 350ms;
 }
 form input::placeholder, form select::placeholder, form textarea::placeholder {
   font-size: 0.85rem;
   text-transform: capitalize;
   opacity: 0.5;
   letter-spacing: 0.1rem;
-  transition: 0.3s;
+  transition: 350ms;
 }
 form input:invalid, form select:invalid, form textarea:invalid {
   background-color: #ddd;
 }
 form input:focus, form input:hover, form select:focus, form select:hover, form textarea:focus, form textarea:hover {
-  background-color: #227f8f34;
+  outline-color: inherit;
 }
 form input:focus::placeholder, form input:hover::placeholder, form select:focus::placeholder, form select:hover::placeholder, form textarea:focus::placeholder, form textarea:hover::placeholder {
   opacity: 1;
@@ -134,15 +138,15 @@ form .checkbox p {
 }
 form .checkbox label {
   font-weight: 400;
-  font-size: 1rem;
 }
 form .radio {
   margin-top: 1.5em;
   text-transform: capitalize;
 }
+form .dropdown {
+  margin-top: 2rem;
+}
 form .dropdown label {
-  color: #0a0c0f;
-  font-size: 1.25rem;
   font-weight: 600;
 }
 form .dropdown select {
@@ -186,7 +190,7 @@ form #submit::before, form #submit::after {
 }
 form #submit::before {
   background: linear-gradient(0deg, #3f0d0d, #dc134c);
-  box-shadow: inset 2px 2px 3px rgba(221, 221, 221, 0.25), inset -2px -2px 3px #000a, 2px 2px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 2px 2px 3px rgba(221, 221, 221, 0.15), inset -2px -2px 3px #000a, 2px 2px 3px rgba(0, 0, 0, 0.15);
 }
 form #submit::after {
   opacity: 0;
@@ -229,7 +233,7 @@ header {
   align-items: center;
   width: 100%;
   min-height: 10vh;
-  padding: 0.25rem 5vw;
+  padding: 0.125rem 5vw;
   color: #f4f4f4;
   background-color: #0a0c0f;
   z-index: 5;

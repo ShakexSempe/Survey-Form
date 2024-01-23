@@ -42,13 +42,14 @@
       <form id="survey-form">
         
         <fieldset id="basic" class="form-group">
+          
           <legend>basic info</legend>
+
           <label for="name" id="name-label">Name*</label>
           <input type="text" class="form-control" id="name" placeholder="name & last-name" required/>
 
           <label for="number" id="number-label">Age</label>
             <input type="number" class="form-control" id="number" min="16" max="99" placeholder="Age"/>
- 
 
           </fieldset>
 
@@ -67,35 +68,37 @@
         <!--Checkbox options-->
         <fieldset id="webpage" class="form-group checkbox">
           <legend>web page preferences</legend>
-          <p>Most regularly used Operating Systems:</p>
-          <div class="checkbox">
-            <label><input type="checkbox" value="1" />Android</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" value="2" />iOS</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" value="3" />Windows</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" value="4" />Linux</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" value="5" />Ubuntu</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" value="6" />Other</label>
-          </div>
+          
+            <p class="label">Most regularly used Operating Systems:</p>
+            <div class="checkbox">
+              <label><input type="checkbox" value="1" />Android</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="2" />iOS</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="3" />Windows</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="4" />Linux</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="5" />Ubuntu</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="6" />Other</label>
+            </div>
+          
           <!--end of Checkbox options-->
 
           <!--Radio buttons-->
           <div class="form-group radio">
-            <p>Webpage devices</p>
+            <p class="label">Webpage devices</p>
             <label for="Option 1" class="radio-inline">
               <input type="radio" value="option 1" name="optradio" />Desktop</label>
 
             <label for="Option 2" class="radio-inline">
-              <input type="radio" value="option 2" name="optradio" checked />Responsive</label>
+              <input type="radio" value="option 2" name="optradio"/>Responsive</label>
 
             <label for="Option 3" class="radio-inline">
               <input type="radio" value="option 3" name="optradio" />Tablet</label>
@@ -107,7 +110,7 @@
 
           <!--dropdown-->
           <div class="form-group dropdown">
-            <label for="dropdown">Prefered JS Framework</label>
+            <label class="label" for="dropdown">Prefered JS Framework</label>
             <select class="form-control" id="dropdown" required title="frameworks">
               <option title="JS" selected="selected" disabled>Javascript</option>
               <option>Angular</option>
@@ -122,7 +125,7 @@
         <!--Comment and submit-->
         <fieldset class="form-group">
           <legend>message</legend>
-          <label for="comment"></label>
+          <label for="comment">message</label>
           <textarea
             class="form-control"
             id="comment"

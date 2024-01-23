@@ -20,15 +20,18 @@ $legend: #29323c;
 $input: #29323c;
 $placeholder: #29323c;
 
+// TRANSITION
+$hover-md: 350ms;
+
 // BUTTONS
 $button-crimson: linear-gradient(0deg, #3f0d0d, #dc134c);
 $button-crimson-hover: linear-gradient(0deg, #dc134c , #3f0d0d);
 $button-gold: linear-gradient(0deg, hsl(40, 63%, 65%), #ead2a1);
 
 // BOX SHADOWS
-$box-light-top-sm: inset 2px 2px 3px rgba(221, 221, 221, 0.250),
+$box-light-top-sm: inset 2px 2px 3px rgba(221, 221, 221, 0.150),
                     inset -2px -2px 3px #000a,
-                    2px 2px 3px rgba(0, 0, 0, .250);
+                    2px 2px 3px rgba(0, 0, 0, .150);
 
 $box-light-top-sm-hover: inset 2px 2px 3px #000a,
                     inset -2px -2px 3px rgba(221, 221, 221, 0.250),

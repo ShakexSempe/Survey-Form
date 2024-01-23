@@ -19,35 +19,35 @@ form {
     }
 
     fieldset {
-
-        // margin: 2rem auto;
-        margin-bottom: 10vh;
-        overflow: hidden;
-        padding: 2.5rem 1rem 1rem;
-        text-align: left;
-        border: 2px solid variables.$overlay-blue-dark;
-        height: auto;
+        position: relative;
         display: flex;
         flex-direction: column;
-        position: relative;
-        
+        margin-bottom: 10vh;
+        padding: 2.5rem 1rem 1rem;
+        border: none;
+        border-radius: 0.25rem;
+        box-shadow: 0rem 0.25rem 0.5rem hsla(0, 0%, 0%, .35);
+        overflow: hidden;
+        transition: 350ms;
+
+
+        // LEGEND LABEL
         legend {
             position: absolute;
             top: 0;
             right: 0;
-            margin-bottom: .5em;
-            text-transform: capitalize;
+            padding: 0.5rem;
+
+            background: variables.$overlay-dark-btn;
             color: variables.$gold;
+            
+            text-transform: capitalize;
             font-size: 0.85rem;
             font-size: clamp(0.85rem, 1.5vw, 1rem);
-            padding: 0.5rem;
-            // border-radius: .5rem;
-            background: variables.$overlay-dark-btn;
-            box-shadow: variables.$box-light-top-sm;
-            // margin: auto;
-        }
 
-        
+            border-bottom-left-radius: 0.25rem;
+            box-shadow: variables.$box-light-top-sm;
+        }
 
     }
 
@@ -62,32 +62,37 @@ form {
         font-size: 1rem;
     }
 
-    label {
-        font-size: 1rem;
+    label, .label {
+        margin-bottom: 0.5rem;
+        font-size: 1.01rem;
         font-weight: 600;
         text-transform: capitalize;
-        margin-bottom: 0.5rem;
+        text-wrap: balance;
     }
 
     input, select, textarea {
-        margin-bottom: 1em;
-        border-radius: 5px;
         padding: .5em;
-        border: 2px variables.$overlay-blue-dark solid;
+        margin-bottom: 1rem;
+        border-radius: 0.25rem;
+        // border: 1px solid transparent;
+        border: none;            
+        outline: 1px solid transparent;
+        transition: 350ms;
 
         &::placeholder {
             font-size: .85rem;
             text-transform: capitalize;
             opacity: .5;
             letter-spacing: .1rem;
-            transition: .3s;
+            transition: 350ms;
         }
 
         &:invalid {
             background-color: #ddd;
         }
         &:focus, &:hover {
-            background-color: #227f8f34;
+            // background-color: #227f8f34;
+            outline-color: inherit;
             &::placeholder {
                 opacity: 1;
                 letter-spacing: normal;
@@ -112,7 +117,7 @@ form {
         label {
             // color: variables.$overlay-blue-dark;
             font-weight: 400;
-            font-size: 1rem;
+            // font-size: 1rem;
         }
     }
 
@@ -124,9 +129,8 @@ form {
     }
 
     .dropdown {
+        margin-top: 2rem;
         label {
-            color: variables.$overlay-blue-darker;   
-            font-size: 1.25rem;
             font-weight: 600;    
         }
         select {
